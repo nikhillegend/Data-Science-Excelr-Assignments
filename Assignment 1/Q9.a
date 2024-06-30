@@ -1,0 +1,122 @@
+a <- c(1,2,3,100)
+var(a)
+sd(a)
+mean(a)
+median(a)
+mfv(a)
+install.package("modeest")
+library(modeest)
+mfv(a)
+scores <- c(1,2,2,2,3,4,4,4,5,6)
+mfv(scores)
+
+#x = read.csv("E:\\Datasets\\Datasets_BA 2\\Q9_a.csv")
+Q9_a <- read.csv("Q9_a.csv")
+View(Q9_a)
+Q9_a <- read.csv("C:/Users/hp/Downloads/Q9_a.csv")
+Q9_a
+
+#Measures of central tendency
+View(Q9_a)
+View(wine)
+mean(Q9_a$speed)
+mean(Q9_a$dist)
+
+library(modeest)
+mfv(Q9_a$speed)
+mfv(Q9_a$dist)
+
+install.packages("modeest")
+
+
+attach(Q9_a)
+mfv(speed)
+mfv(Q9_a$dist)
+
+median(Q9_a$dist)
+
+
+mean(Q9_a$dist)
+median(Q9_a$speed)
+median(Q9_a$dist)
+mfv(Q9_a$speed)
+mfv(Q9_a$dist)
+
+
+summary(Q9_a)
+summary(Q9_a$speed)
+summary(speed)
+summary(dist)
+
+attach(Q9_a)
+mean(speed)
+mean(dist)
+summary(speed)
+
+detach(Q9_a)
+mean(Q9_a$speed)
+str(Q9_a)
+
+#Measures of Dispersion
+var(Q9_a$speed)
+var(Q9_a$dist)
+sd(Q9_a$speed)
+sd(Q9_a$dist)
+range(Q9_a$speed)
+range(Q9_a$dist)
+
+rangevalue <- function(x){max(x)-min(x)}
+rangevalue(Q9_a$dist)
+
+max(Q9_a$speed)
+min(Q9_a$dist)
+
+#Measures of skewness
+install.packages("moments")
+library(moments)
+
+#Measures of skewnwss
+skewness(Q9_a$speed)
+hist(Q9_a$speed)
+hist(Q9_a$dist)
+View(Q9_a)
+
+my_datal <- Q9_a[,]
+View(my_datal)
+colMeans(Q9_a[sapply(Q9_a,is.numeric])
+sapply(filter(is.numeric,my_datal,mean)
+my_datal
+#Measures of Kurtosis
+kurtosis(Q9_a$speed)
+kurtosis(Q9_a$dist)
+plot(density(Q9_a$speed))
+plot(density(Q9_a$dist))
+
+#Graphical Representation
+#Boxplot
+#Histogram
+
+boxplot(Q9_a$speed)
+boxplot(Q9_a$dist)
+summary(Q9_a$speed)
+View(Q9_a)
+
+
+hist(Q9_a$speed,breaks = c(30,40,50,60,70,80,90,100),freq = T,col = 'blue')
+hist(Q9_a$speed)
+hist(Q9_a$dist)
+
+barplot(Q9_a$speed)
+
+install.packages("moments")
+library(moments)
+skewness(Q9_a$speed)
+skewness(Q9_a$dist)
+library(modeest)
+kurtosis(Q9_a$speed)
+kurtosis(Q9_a$dist)
+
+
+
+
+
